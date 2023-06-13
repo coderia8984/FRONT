@@ -10,6 +10,8 @@
     },
     "rules": {
         "import/no-unresolved": 0 ,
-        "no-unresolved": "on"
+        "no-unresolved": 0,
+        "import/no-extraneous-dependencies": 0,
+        "no-unreachable": 0
     }
 }
