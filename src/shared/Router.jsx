@@ -1,14 +1,16 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "../Pages/Home";
+import Home from "Pages/Home";
+import Editor from "Components/feature/Editor/Editor";
 
 function Router() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/editor" element={<Editor />} />
         {/* <Route path="/job" element={<PostList />} />
-        <Route path="posting" element={<Posting />} />
+        
         <Route path="/job/:job_id" element={<Detailpage />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Signin />} />
