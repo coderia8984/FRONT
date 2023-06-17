@@ -1,10 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import KakaoBtn from './kakao_login_medium_narrow.png';
 
 function Kakaologin() {
+  const loginUrl = `${process.env.REACT_APP_BACKEND_SERVER_URL}/auth/kakao`;
   return (
     <div>
-      <Link to='http://52.78.31.220/auth/kakao'>로그인</Link>
+      <a href={loginUrl}>
+        <img src={KakaoBtn} alt='kakao login button' />
+      </a>
     </div>
   );
 }

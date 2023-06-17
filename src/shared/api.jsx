@@ -13,4 +13,8 @@ export const AuthApi = {
   write: (payload, config) => api.post('/job/write', payload, { ...config }),
 };
 
+export const KakaologinAPI = {
+  getLogin: () => instance.get('/auth/kakao'),
+};
+
 export default instance;
