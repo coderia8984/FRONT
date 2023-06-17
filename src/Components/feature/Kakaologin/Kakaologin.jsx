@@ -1,12 +1,11 @@
-import React from "react";
-import kakaobtn from "./kakao_login_medium_narrow.png";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Kakaologin() {
-  const kakaologinApi = "http://abc.com";
   return (
-    <a href={kakaologinApi}>
-      <img src={kakaobtn} alt="kakao Login button" />
-    </a>
+    <div>
+      <Link to='http://52.78.31.220/auth/kakao'>로그인</Link>
+    </div>
   );
 }
 
